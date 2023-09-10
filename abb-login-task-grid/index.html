@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABB Sign-In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="left-side">
+        <header>
+          <img src="./images/Abb Business logo.png" alt="" />
+          <nav>
+            <ul>
+              <li><a class="active" href="#">AZ</a></li>
+              <li><a href="#">EN</a></li>
+              <li><a href="#">RU</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <h1>ASAN imza <span>/ KOBIL OTP</span></h1>
+          <form>
+            <label for="number">ASAN imza mobil nömrəsi </label>
+            <div class="input-wrapper">
+              <div class="prefix">+994</div>
+              <input class="mobile-num" type="number" id="number" />
+            </div>
+            <label for="user_id">ASAN İmza istifadəçi ID-si</label>
+            <div class="input-wrapper">
+              <input type="text" class="user-id" id="user_id" />
+            </div>
+
+            <div class="buttons">
+              <button class="continue-btn" type="submit">Davam et</button>
+              <span>və ya</span>
+              <button class="register-btn" type="button">Qeydiyyat</button>
+            </div>
+          </form>
+        </main>
+        <footer>
+          <div class="footer-img">
+            <img src="./images/Frame 7508.png" alt="" />
+          </div>
+          <div class="footer-text">
+            <a href="#">Köhnə İB-ə keçid</a>
+            <div class="line"></div>
+          </div>
+        </footer>
+      </section>
+      <section class="right-side"></section>
+    </div>
+  </body>
+</html>
