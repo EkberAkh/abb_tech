@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+body > header {
+  background-color: #0c0c0c;
+  font-weight: 400;
+}
+
+body > header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body > header > .container > .header-left {
+  display: flex;
+}
+
+body > header > .container > .header-left > .header-logo-side {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 18px;
+  > button {
+    cursor: pointer;
+  }
+
+  > img {
+    height: 100%;
+  }
+  > span {
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+body > header > .container > .header-left > .header-logo-side > button {
+  background-color: transparent;
+  border: none;
+}
+
+body > header > .container > .header-left > nav {
+  color: #e6e6e6;
+  display: flex;
+  align-items: center;
+
+  > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+    font-size: 15px;
+    > li {
+      cursor: pointer;
+    }
+  }
+}
+
+body > header > .container > .header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  > a {
+    text-decoration: none;
+    color: #e6e6e6;
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
+body > header > .container > .header-right > .search-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+body > header > .container > .header-right > .login-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  padding: 6px 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.container > main {
+  margin: 50px 0 70px;
+
+  > .main-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 48px;
+    margin-bottom: 40px;
+  }
+}
+.container > main > .cards > .card > .card-img > img {
+  max-width: 100%;
+}
+.container > main > .cards > .card > .card-description {
+  font-weight: 400;
+
+  font-size: 16px;
+}
+.container > main > .cards {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+body > footer {
+  background-color: #0c0c0c;
+  padding-bottom: 80px;
+
+  > h3 {
+    color: #fff;
+  }
+}
+body > footer > .container {
+  padding-top: 20px;
+}
+
+body > footer > .container > .input-field {
+  margin-bottom: 20px;
+  position: relative;
+
+  > input {
+    width: 100%;
+    border: 1px solid #b1b1b1;
+    padding: 8px 12px 8px 48px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  > input::placeholder {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  > input:focus {
+    outline: none;
+  }
+  > img {
+    position: absolute;
+    left: 0;
+    margin: 5px 0 0 16px;
+  }
+}
+
+body > footer > .container > .footer-items {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+}
+
+body > footer > .container > .footer-items > .footer-item {
+  text-align: left;
+  > h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  > ul {
+    color: #e6e6e6;
+    list-style-type: none;
+
+    padding: 0;
+    > li {
+      font-weight: 400;
+      font-size: 14px;
+      cursor: pointer;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 992px) {
+  body > header > .container {
+    font-size: 14px;
+  }
+  body > header > .container > .header-left > nav {
+    display: none;
+  }
+  .container > main > .cards {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .container > main > .cards > div:nth-child(6) {
+    display: none;
+  }
+  .container > main > .cards > div:nth-child(7) {
+    display: none;
+  }
+  .container > main > .cards > div:nth-child(8) {
+    display: none;
+  }
+  .container > main > .cards > div:nth-child(9) {
+    display: none;
+  }
+  .container > main > .cards > div:nth-child(10) {
+    display: none;
+  }
+
+  body > footer > .container > .footer-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+  }
+  body > footer > .container > .footer-items > .tech {
+    display: none;
+  }
+  body > footer > .container > .footer-items > .style {
+    display: none;
+  }
+  body > footer > .container > .footer-items > .more {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container > main > .main-title {
+    font-size: 32px;
+  }
+  .container > main > .cards {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  body > footer > .container > .footer-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  body > footer > .container > .footer-items > .world {
+    display: none;
+  }
+  body > footer > .container > .footer-items > .entertainment {
+    display: none;
+  }
+  body > footer > .container > .footer-items > .weather {
+    display: none;
+  }
+  body > footer > .container > .footer-items > .travel {
+    display: none;
+  }
+  body > footer > .container > .footer-items {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .container > main > .cards > div:nth-child(11) {
+    display: none;
+  }
+  .container > main > .cards > div:nth-child(12) {
+    display: none;
+  }
+  .container > main > .cards > div:nth-child(13) {
+    display: none;
+  }
+  .container > main > .cards > div:nth-child(14) {
+    display: none;
+  }
+  .container > main > .cards > div:nth-child(15) {
+    display: none;
+  }
+}
+
+@media (max-width: 428px) {
+  body > footer > .container > .footer-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .container > main > .main-title {
+    font-size: 24px;
+  }
+  .container {
+    max-width: 100%;
+  }
+  body > footer > .container > .footer-items {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  body > header > .container > .header-right > a {
+    display: none;
+  }
+  .container > main > .cards > .card > .card-description {
+    font-size: 14px;
+  }
+  body > footer > .container > .footer-items > .health {
+    display: none;
+  }
+  body > footer > .container > .footer-items > .features {
+    display: none;
+  }
+}
