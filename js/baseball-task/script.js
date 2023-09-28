@@ -34,32 +34,32 @@ let ops3 = ["1", "C"];
 //----------------------------------------------------------------
 //second solution:
 
-const calPoints = (ops) => {
-    let scores = []
-    let sum = 0
-  for (let i = 0; i < ops.length; i++) {
-    const element = ops[i];
-    if (element === "+") {
-        let score = scores[scores.length -1] + scores[scores.length -2]
-        scores.push(score)
-        sum += score
-    }else if(element === 'D'){
-        let score = scores[scores.length - 1] * 2
-        scores.push(score)
-        sum += score
-    }else if (element === 'C'){
-        let deletedScore = scores.pop()
-        sum -= deletedScore
-    }
-    else{
-        let score = parseInt(element)
-        scores.push(score)
-        sum += score
-    }
-  }
-  return sum
-};
-console.log(calPoints(ops));
-console.log(calPoints(ops2));
-console.log(calPoints(ops3));
+// const calPoints = (ops) => {
+//     let scores = []
+//     let sum = 0
+//   for (let i = 0; i < ops.length; i++) {
+//     const element = ops[i];
+//     if (element === "+") {
+//         let score = scores[scores.length -1] + scores[scores.length -2]
+//         scores.push(score)
+//         sum += score
+//     }else if(element === 'D'){
+//         let score = scores[scores.length - 1] * 2
+//         scores.push(score)
+//         sum += score
+//     }else if (element === 'C'){
+//         let deletedScore = scores.pop()
+//         sum -= deletedScore
+//     }
+//     else{
+//         let score = parseInt(element)
+//         scores.push(score)
+//         sum += score
+//     }
+//   }
+//   return sum
+// };
+// console.log(calPoints(ops));
+// console.log(calPoints(ops2));
+// console.log(calPoints(ops3));
 // -----------------------------------------------------------------
