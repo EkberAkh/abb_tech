@@ -9,16 +9,19 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css" />
     <title>CNN</title>
   </head>
   <body>
+  
     <header>
       <div class="container">
         <div class="header-left">
           <div class="header-logo-side">
-            <button type="button">
-              <img src="./assets/images/Button - Open Menu Icon.png" alt="" />
+            <button id="menu-btn" type="button">
+              <img id="hamburger" src="./assets/images/Button - Open Menu Icon.png" alt="" />
+              <i id="xmark" class="fa-solid fa-xmark d-none"></i>
             </button>
             <img src="./assets/images/SVG.png" alt="" />
             <span>US</span>
@@ -42,8 +45,19 @@
         </div>
       </div>
     </header>
+    <div class="hamburger-menu d-none">
+      <div class="header-items">
+        <ul>
+          <li>Crime + Justice</li>
+          <li>Energy + Environment</li>
+          <li>Extreme Weather</li>
+          <li>Space + Science</li>
+        </ul>
+      </div>
+    </div>
     <div class="container">
       <main>
+   
         <h1 class="main-title">Energy And Environment</h1>
         <div class="cards">
           <div class="card">
@@ -412,5 +426,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

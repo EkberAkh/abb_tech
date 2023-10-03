@@ -4,12 +4,33 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 .container {
   max-width: 75%;
   margin: 0 auto;
 }
-
+.d-none{
+  display: none;
+}
+.d-block{
+  display: block;
+}
+body>.hamburger-menu{
+  position: absolute;
+  background-color: #0c0c0c;
+  width: 50vh;
+  height: 100vh;
+  z-index: 5;
+}
+body>.hamburger-menu>.header-items>ul{
+  margin-top: 30px;
+  list-style-type: none;
+  color: #E6E6E6;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 body > header {
   background-color: #0c0c0c;
   font-weight: 400;
@@ -24,6 +45,10 @@ body > header > .container {
 body > header > .container > .header-left {
   display: flex;
 }
+body > header > .container > .header-left > .header-logo-side>button>i{
+  color: #E6E6E6;
+  font-size: 28px;
+}
 
 body > header > .container > .header-left > .header-logo-side {
   display: flex;
@@ -32,6 +57,7 @@ body > header > .container > .header-left > .header-logo-side {
   gap: 18px;
   > button {
     cursor: pointer;
+    display: none;
   }
 
   > img {
@@ -193,6 +219,9 @@ body > footer > .container > .footer-items > .footer-item {
 }
 
 @media (max-width: 992px) {
+  body > header > .container > .header-left > .header-logo-side>button{
+    display: block;
+  }
   body > header > .container {
     font-size: 14px;
   }
