@@ -108,7 +108,7 @@ function renderTodoItem(data) {
     if (event.key === "Enter") {
       editInput.style.display = "none";
 
-      // Send a PUT request to update the item
+      
       const updatedTitle = editInput.value;
       await updateTodo(data.id, updatedTitle);
       li.innerText = updatedTitle;
