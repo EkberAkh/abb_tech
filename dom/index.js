@@ -104,6 +104,8 @@ function renderTodoItem(data) {
 
     editBtn.style.display = "none";
   });
+
+  
   editInput.addEventListener("keyup", async (event) => {
     if (event.key === "Enter") {
       editInput.style.display = "none";
