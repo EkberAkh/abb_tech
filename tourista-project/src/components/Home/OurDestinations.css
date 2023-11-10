@@ -1,0 +1,44 @@
+.our-destinations {
+  margin-top: 120px;
+  background-color: var(--violet-500);
+  padding: 72px 0;
+}
+
+.our-destinations > .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  > p {
+    font: var(--inter-semiBold-24);
+    color: var(--white);
+  }
+  > .link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    padding: 12px 24px;
+    background-color: var(--white);
+    border-radius: 24px;
+    color: var(--violet-500);
+    font: var(--inter-semiBold-16);
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 592px) {
+  .our-destinations > .wrapper {
+    flex-direction: column;
+    > p {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width:540px){
+  .our-destinations {
+    margin-top: 60px;
+  }
+}

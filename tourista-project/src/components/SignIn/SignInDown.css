@@ -1,0 +1,13 @@
+.right-down {
+  display: flex;
+  gap: 4px;
+  font: var(--inter-regular-14);
+
+  > span {
+    color: var(--gray-900);
+    > .link {
+      color: var(--violet-500);
+      text-decoration: none;
+    }
+  }
+}

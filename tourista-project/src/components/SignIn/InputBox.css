@@ -1,0 +1,95 @@
+.right-inputs {
+
+  >.right-inputs-content{
+    margin-bottom: 36px;
+
+    > .right-inputs-title {
+      color: var(--gray-900);
+      font: var(--inter-semiBold-24);
+      margin-bottom: 16px;
+    }
+    >.right-inputs-text{
+      color: var(--gray-900);
+      font: var( --inter-regular-16);
+    }
+
+  }
+}
+
+.right-inputs > form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.right-inputs > form > .input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+
+  > label {
+    color: var(--gray-900);
+    font: var(--inter-regular-16);
+  }
+  > input {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--gray-100);
+    padding: 12px 38px 12px 16px;
+    outline: none;
+    font: var(--inter-regular-16);
+  }
+  > input::placeholder {
+    color: var(--gray-400);
+    font: var(--inter-regular-16);
+  }
+}
+
+.right-inputs > form > .input-box-password {
+  position: relative;
+
+  > img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+}
+
+.right-inputs > .forgot {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  > span {
+    color: var(--gray-900);
+    font: var(--inter-regular-14);
+  }
+}
+
+.right-inputs > .sign-in-btn {
+  width: 100%;
+  border-radius: 24px;
+  background-color: var(--violet-500);
+  color: var(--white);
+  font: var(--inter-semiBold-16);
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  margin: 24px 0;
+}
+
+@media (max-width: 512px) {
+  .right-inputs {
+    width: 100%;
+  }
+  .right-inputs {
+    > .right-inputs-title {
+      font: var(--inter-semiBold-20);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.blog-cards > .container > .blog-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  >.blog-cards-first{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  >.blog-cards-second{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+
+  }
+  }
+  

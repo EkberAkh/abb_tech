@@ -1,0 +1,54 @@
+.map-italy {
+  margin-top: 120px;
+  position: relative;
+
+  > img {
+    width: 100%;
+  }
+  > .map-italy-inner {
+  }
+}
+
+.map-italy::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: linear-gradient(#97a5b2, #97a5b200 12%);
+}
+
+.map-italy > .map-italy-inner {
+  > .map-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 36px 72px;
+    color: var(--white);
+    font: var(--inter-semiBold-32);
+  }
+  > .arrows {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 36px 72px;
+    > img {
+      background-color: var(--white);
+      border-radius: 100px;
+      padding: 12px;
+      cursor: pointer;
+    }
+  }
+  > .map-card {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 36px 72px;
+  }
+}

@@ -1,0 +1,191 @@
+.local-experts {
+  margin-top: 120px;
+}
+
+.local-experts > .container > .experts-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.local-experts > .container > .experts-wrapper > .first-photo {
+  position: relative;
+  > img {
+    width: 100%;
+    position: relative;
+    left: 60px;
+  }
+  > .text {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+  }
+}
+
+.local-experts
+  > .container
+  > .experts-wrapper
+  > .first-photo
+  > .text
+  > .text-inner {
+  position: relative;
+
+  > p {
+    position: absolute;
+    top: 0;
+    padding-top: 30px;
+    color: var(--gray-900);
+    font: var(--inter-semiBold-16);
+    max-width: 200px;
+  }
+}
+.local-experts > .container > .experts-wrapper > .second-photo {
+  position: relative;
+  padding-top: 40px;
+  > img {
+    width: 100%;
+    position: relative;
+  }
+  > .text {
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+    padding-bottom: 25px;
+  }
+}
+
+.local-experts
+  > .container
+  > .experts-wrapper
+  > .second-photo
+  > .text
+  > .text-inner {
+  position: relative;
+
+  > p {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: var(--gray-900);
+    font: var(--inter-semiBold-16);
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .local-experts > .container > .experts-wrapper > .second-photo > .text {
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 772px) {
+  .local-experts > .container > .experts-wrapper {
+    justify-content: center;
+    position: relative;
+  }
+  .local-experts > .container > .experts-wrapper > .first-photo > img {
+    display: none;
+  }
+  .local-experts > .container > .experts-wrapper > .second-photo > img {
+    display: none;
+  }
+  .local-experts > .container > .experts-wrapper > img {
+    width: 80%;
+    display: block;
+  }
+  .local-experts > .container > .experts-wrapper > .first-photo > .text {
+    left: 0;
+  }
+  .local-experts > .container > .experts-wrapper > .first-photo {
+    position: static;
+  }
+}
+
+@media (max-width: 540px) {
+    .local-experts {
+        margin-top: 60px;
+      }
+  .local-experts
+    > .container
+    > .experts-wrapper
+    > .first-photo
+    > .text
+    > .text-inner
+    > p {
+    font: var(--inter-semiBold-14);
+  }
+  .local-experts
+    > .container
+    > .experts-wrapper
+    > .second-photo
+    > .text
+    > .text-inner
+    > p {
+    font: var(--inter-semiBold-14);
+  }
+  .local-experts > .container > .experts-wrapper > img {
+    width: 100%;
+    display: block;
+  }
+  .local-experts > .container > .experts-wrapper > .first-photo > .text {
+    margin-top: 140px;
+  }
+  .local-experts > .container > .experts-wrapper > .first-photo >.text>.text-inner>img{
+    max-width: 230px;
+  }
+}
+
+
+@media (max-width: 420px){
+    .local-experts > .container > .experts-wrapper > .first-photo > .text {
+        margin-top: 110px;
+      }
+}
+@media (max-width: 366px){
+    .local-experts > .container > .experts-wrapper > .first-photo > .text {
+        margin-top: 90px;
+      }
+      .local-experts > .container > .experts-wrapper > .first-photo >.text>.text-inner>img{
+        max-width: 210px;
+      }
+      .local-experts > .container > .experts-wrapper > .second-photo >.text>.text-inner>img{
+        max-width: 210px;
+      }
+      .local-experts
+      > .container
+      > .experts-wrapper
+      > .first-photo
+      > .text
+      > .text-inner
+      > p {
+      font: var(--inter-semiBold-12);
+    }
+    .local-experts
+      > .container
+      > .experts-wrapper
+      > .second-photo
+      > .text
+      > .text-inner
+      > p {
+      font: var(--inter-semiBold-12);
+    }
+}
+
+@media (max-width: 366px){
+    .local-experts > .container > .experts-wrapper > .first-photo > .text {
+        margin-top: 80px;
+      }
+      .local-experts > .container > .experts-wrapper > .first-photo >.text>.text-inner{
+        >img{
+        max-width: 190px;
+      }
+      >p{
+        max-width: 170px;
+        padding-top: 16px;
+      }
+    }
+      .local-experts > .container > .experts-wrapper > .second-photo >.text>.text-inner>img{
+        max-width: 190px;
+      }
+}

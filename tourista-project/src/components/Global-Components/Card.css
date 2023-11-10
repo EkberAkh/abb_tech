@@ -1,0 +1,74 @@
+.card {
+  border: 1px solid var(--gray-100);
+  border-radius: 24px;
+}
+.card > .card-inner > .card-img-container {
+  position: relative;
+
+  > img {
+    width: 100%;
+  }
+  > .card-img-content {
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.card > .card-inner > .card-img-container > .card-img-content {
+  > .loved {
+    background-color: var(--violet-500);
+    font: var(--inter-medium-16);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 24px;
+    > .loved-txt {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  > .bookmark > .bookmark-img {
+    background-color: var(--white);
+    border-radius: 24px;
+    padding: 8px 8px 6px;
+  }
+}
+
+.card > .card-inner > .card-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  > .country-name {
+    text-transform: uppercase;
+    font: var(--inter-medium-12);
+    color: var(--gray-500);
+  }
+  > p {
+    color: var(--gray-900);
+    font: var(--inter-semiBold-16);
+    margin-bottom: 8px;
+  }
+}
+
+.card > .card-inner > .card-info > .date-price {
+  display: flex;
+  justify-content: space-between;
+  > .day {
+    font: var(--inter-regular-14);
+    color: var(--gray-500);
+  }
+  > .price {
+    font: var(--inter-regular-14);
+    color: var(--gray-500);
+    > b {
+      color: var(--gray-900);
+      font: var(--inter-semiBold-16);
+    }
+  }
+}

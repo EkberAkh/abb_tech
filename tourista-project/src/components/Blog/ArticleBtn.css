@@ -1,0 +1,14 @@
+.article-btn>button{
+    background-color: var(--gray-50);
+    font: var(--inter-regular-16);
+    color: var(--gray-700);
+    padding: 12px 24px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.article-btn>.button-active{
+    background-color: var(--violet-500);
+    color: var(--white);
+}

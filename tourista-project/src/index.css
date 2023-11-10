@@ -1,0 +1,97 @@
+:root {
+  --violet-50: #eeecfe;
+  --violet-100: #d0c6fb;
+  --violet-200: #b19ff8;
+  --violet-300: #8266f4;
+  --violet-400: #6440f1;
+  --violet-500: #4a21ef;
+  --violet-600: #3610d2;
+  --violet-700: #2b0cac;
+  --violet-800: #1d0873;
+  --violet-900: #0f0339;
+
+  --gray-50: #f5f7fa;
+  --gray-100: #e3e7eb;
+  --gray-200: #c9d2da;
+  --gray-300: #97a5b2;
+  --gray-400: #788795;
+  --gray-500: #5e6f7d;
+  --gray-600: #4e616e;
+  --gray-700: #3a4d5a;
+  --gray-800: #27343f;
+  --gray-900: #141d24;
+
+  --black: #000000;
+  --white: #fff;
+
+  --inter-regular-12: 400 12px "Inter", sans-serif;
+  --inter-regular-14: 400 14px "Inter", sans-serif;
+  --inter-regular-16: 400 16px "Inter", sans-serif;
+  --inter-regular-20: 400 20px "Inter", sans-serif;
+  --inter-regular-24: 400 24px "Inter", sans-serif;
+  --inter-regular-28: 400 28px "Inter", sans-serif;
+  --inter-regular-32: 400 32px "Inter", sans-serif;
+  --inter-regular-36: 400 36px "Inter", sans-serif;
+
+  --inter-medium-12: 500 12px "Inter", sans-serif;
+  --inter-medium-14: 500 12px "Inter", sans-serif;
+  --inter-medium-16: 500 16px "Inter", sans-serif;
+  --inter-medium-20: 500 20px "Inter", sans-serif;
+  --inter-medium-24: 500 24px "Inter", sans-serif;
+  --inter-medium-28: 500 28px "Inter", sans-serif;
+  --inter-medium-32: 500 32px "Inter", sans-serif;
+  --inter-medium-36: 500 36px "Inter", sans-serif;
+
+  --inter-semiBold-12: 600 12px "Inter", sans-serif;
+  --inter-semiBold-14: 600 14px "Inter", sans-serif;
+  --inter-semiBold-16: 600 16px "Inter", sans-serif;
+  --inter-semiBold-20: 600 20px "Inter", sans-serif;
+  --inter-semiBold-24: 600 24px "Inter", sans-serif;
+  --inter-semiBold-28: 600 28px "Inter", sans-serif;
+  --inter-semiBold-32: 600 32px "Inter", sans-serif;
+  --inter-semiBold-36: 600 36px "Inter", sans-serif;
+  --inter-semiBold-40: 600 40px "Inter", sans-serif;
+  --inter-semiBold-48: 600 48px "Inter", sans-serif;
+
+  --inter-bold-12: 700 12px "Inter", sans-serif;
+  --inter-bold-16: 700 16px "Inter", sans-serif;
+  --inter-bold-20: 700 20px "Inter", sans-serif;
+  --inter-bold-24: 700 24px "Inter", sans-serif;
+  --inter-bold-28: 700 28px "Inter", sans-serif;
+  --inter-bold-32: 700 32px "Inter", sans-serif;
+  --inter-bold-36: 700 36px "Inter", sans-serif;
+  --inter-bold-40: 700 40px "Inter", sans-serif;
+  --inter-bold-48: 700 48px "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  color: var(--gray-900);
+  font: var(--inter-bold-36);
+  margin-bottom: 40px;
+}
+
+.d-none {
+  display: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font: var(--inter-bold-28);
+  }
+}

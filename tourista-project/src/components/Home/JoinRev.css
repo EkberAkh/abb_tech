@@ -1,0 +1,85 @@
+.join-rev {
+  margin: 120px auto;
+  max-width: 636px;
+}
+
+.join-rev > .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  > p {
+    text-align: center;
+    color: var(--gray-900);
+    font: var(--inter-regular-16);
+    max-width: 636px;
+  }
+}
+
+.join-rev > .inner > .input-wrapper {
+  position: relative;
+  width: 80%;
+  > input {
+    width: 100%;
+    padding: 16px 12px 16px 24px;
+    border-radius: 99px;
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    outline: none;
+  }
+  > input::placeholder {
+    color: var(--gray-300);
+    font: var(--inter-regular-16);
+  }
+  > .link {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--violet-500);
+    padding: 8px 16px;
+    border-radius: 24px;
+    font: var(--inter-semiBold-16);
+    position: absolute;
+    right: 0;
+    margin-top: 7px;
+    margin-right: 6px;
+  }
+}
+
+.up-btn {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.up-btn > .container > button {
+  background-color: var(--violet-500);
+  border-radius: 24px;
+  padding: 12px 14px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-width: 792px){
+  .up-btn{
+    display: none;
+  }
+}
+
+@media (max-width: 492px) {
+  .join-rev > .inner > .input-wrapper {
+    width: 100%;
+
+    > input {
+      width: 100%;
+    }
+  }
+}
+@media (max-width:540px){
+  .join-rev {
+    margin-top: 60px;
+  }
+}

@@ -1,0 +1,102 @@
+.banner {
+  margin-top: 22px;
+}
+.banner > .container > .banner-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner > .container > .banner-wrapper > .background-img {
+  width: 100%;
+  border-radius: 20px;
+}
+.banner > .container > .banner-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  background-color: var(--gray-900);
+  opacity: 0.2;
+}
+
+.banner > .container > .banner-wrapper > .banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > .title {
+    color: var(--white);
+    font: var(--inter-semiBold-48);
+    margin-bottom: 16px;
+  }
+  > p {
+    color: var(--white);
+    font: var(--inter-semiBold-16);
+    margin-bottom: 60px;
+  }
+  > .create-trip {
+    color: var(--white);
+    font: var(--inter-semiBold-16);
+    padding: 12px 24px;
+    background-color: var(--violet-500);
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.banner > .container > .banner-wrapper > .country-infos {
+  position: absolute;
+  bottom: 0;
+  /* left: 50%;
+  transform: translate(-50%, -50%); */
+
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.banner > .container > .banner-wrapper > .country-infos > .info-item {
+  border-right: 1px solid var(--white);
+  padding-right: 26px;
+  margin-bottom: 12px;
+
+  > .info-content {
+    font: var(--inter-regular-14);
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+}
+
+.banner
+  > .container
+  > .banner-wrapper
+  > .country-infos
+  > .info-item
+  > .info-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  > .info-title {
+    font: var(--inter-bold-16);
+    color: var(--white);
+  }
+}
+
+.banner
+  > .container
+  > .banner-wrapper
+  > .country-infos
+  > .info-item:last-child {
+  border: none;
+}

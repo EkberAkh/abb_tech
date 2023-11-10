@@ -1,0 +1,10 @@
+.must-see {
+    margin-top: 120px;
+  }
+
+  
+  .must-see > .container > .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }

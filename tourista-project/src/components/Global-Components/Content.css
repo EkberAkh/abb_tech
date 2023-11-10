@@ -1,0 +1,43 @@
+.content {
+  display: flex;
+  background-color: var(--gray-50);
+  padding: 32px;
+  border-radius: 20px;
+  gap: 16px;
+  align-items: flex-start;
+
+  > .content-img>img {
+    background-color: var(--violet-500);
+    padding: 16px;
+    border-radius: 100px;
+ 
+  }
+  
+}
+.content>.content-img{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+
+}
+.content>.guidance-box>.guidance-text{
+color: var(--gray-900);
+font: var(--inter-regular-14);
+}
+.content>.guidance-box>.guidance-head{
+  color: var(--gray-900);
+  font: var(--inter-semiBold-16);
+  }
+  .content>.guidance-box{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+
+  @media(max-width:992px){
+    .content{
+      align-items: center;
+    }
+}
