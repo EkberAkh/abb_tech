@@ -10,7 +10,8 @@
 }
 
 .sign-in > .sign-in-right {
-  margin: 36px 0;
+  margin: 36px 36px;
+  position: relative;
 }
 .sign-in > .sign-in-right > .container > .sign-in-right-inner {
   display: flex;
@@ -20,6 +21,14 @@
 
 .sign-in > .sign-in-right > .container > .sign-in-right-inner > .right-head {
   margin-bottom: 60px;
+  display: flex;
+
+
+  > .prev-arrow {
+   position: absolute;
+   left: 0;
+   cursor: pointer;
+  }
 }
 
 @media (max-width: 882px) {
