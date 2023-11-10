@@ -9,7 +9,6 @@ import Contact from "./Pages/Contact";
 import FirstHeader from "./components/Global-Components/FirstHeader";
 import MainHeader from "./components/Global-Components/MainHeader";
 import Footer from "./components/Global-Components/Footer";
-import "./App.css";
 import SignInPage from "./components/SignIn/SignInPage";
 
 function App() {
